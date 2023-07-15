@@ -3,8 +3,9 @@ import Serviceable
 
 
 class Car(Serviceable):
-    def __init__(self, last_service_date):
-        self.last_service_date = last_service_date
+    def __init__(self, engine_make, battery_make):
+        self.batteryMake = battery_make
+        self.engineMake = engine_make
 
     @abstractmethod
     def needs_service(self):
