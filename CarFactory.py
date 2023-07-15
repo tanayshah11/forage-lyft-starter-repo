@@ -19,6 +19,7 @@ class CarFactory:
         self.current_mileage = current_mileage
         self.last_service_mileage = last_service_mileage
 
+    @staticmethod
     def create_calliope(self, current_date: date, last_service_date: date, current_mileage: int,
                         last_service_mileage: int):
         b = SpindlerBattery(last_service_date, current_date)
@@ -26,24 +27,28 @@ class CarFactory:
         c = Car(e, b)
         return c
 
+    @staticmethod
     def create_glissade(self, current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int):
         b = SpindlerBattery(last_service_date, current_date)
         e = WilloughbyEngine(current_mileage, last_service_mileage)
         c = Car(e, b)
         return c
 
+    @staticmethod
     def create_palindrome(self, current_date: date, last_service_date: date, warning_light_on: bool):
         b = SpindlerBattery(last_service_date, current_date)
         e = SternmanEngine(warning_light_on)
         c = Car(e, b)
         return c
 
+    @staticmethod
     def create_rorschach(self, current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int):
         b = NubbinBattery(last_service_date, current_date)
         e = WilloughbyEngine(current_mileage, last_service_mileage)
         c = Car(e, b)
         return c
 
+    @staticmethod
     def create_thovex(current_date: date, last_service_date: date, current_mileage: int, last_service_mileage: int):
         b = NubbinBattery(last_service_date, current_date)
         e = CapuletEngine(current_mileage, last_service_mileage)
