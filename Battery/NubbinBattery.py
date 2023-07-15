@@ -1,7 +1,7 @@
 from abc import abstractmethod
 import datetime
 
-import Battery
+from Battery import Battery
 
 
 class NubbinBattery(Battery):

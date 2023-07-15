@@ -1,7 +1,8 @@
 import unittest
 
-from Battery.NubbinBattery import NubbinBattery
-from Battery.SpindlerBattery import SpindlerBattery
+
+from Battery import SpindlerBattery
+from Battery import NubbinBattery
 from Engine.capulet_engine import CapuletEngine
 from Engine.sternman_engine import SternmanEngine
 from Engine.willoughby_engine import WilloughbyEngine
