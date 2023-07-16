@@ -1,4 +1,3 @@
-from abc import abstractmethod
 import datetime
 
 from Battery import Battery
