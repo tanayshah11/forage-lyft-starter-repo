@@ -10,4 +10,4 @@ class SpindlerBattery(Battery):
 
     def needs_service(self):
         delta = datetime.strptime(self.current_date, "%Y/%m/%d") - datetime.strptime(self.last_service_date, "%Y/%m/%d")
-        return delta > 730
+        return delta > 1095
